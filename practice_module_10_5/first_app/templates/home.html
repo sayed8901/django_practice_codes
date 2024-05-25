@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 100px;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <h1><a href="/">Main Home Page</a></h1>
+      <h1><a href="/first_app/">App Home</a></h1>
+      <h1><a href="/first_app/about/">About</a></h1>
+      <h1><a href="/first_app/contact/">Contact</a></h1>
+    </div>
+
+    <br />
+    <h1>Hello from first_app home page</h1>
+    <br />
+
+    <!-- Add filter -->
+    <h2>
+      Add Filter:
+      <span
+        >&emsp;&emsp; actual age is: {{age}}. but age after adding is:
+        <span>{{ age | add:12 }}</span>
+      </span>
+    </h2>
+
+    <!-- Capfirst filter -->
+    <h2>
+      Capfirst Filter:
+      <span>&emsp;&emsp; {{ bio | capfirst }}</span>
+    </h2>
+
+    <!-- Upper filter -->
+    <h2>
+      Upper Filter:
+      <span>&emsp;&emsp; {{ bio | upper }}</span>
+    </h2>
+
+    <!-- Lower filter -->
+    <h2>
+      Lower Filter:
+      <span>&emsp;&emsp; {{ bio | lower }}</span>
+    </h2>
+
+    <!-- Title filter -->
+    <h2>
+      Title Filter:
+      <span>&emsp;&emsp; {{ bio | title }}</span>
+    </h2>
+
+    <!-- Cut filter -->
+    <h2>
+      Cut Filter after removing spaces:
+      <span>&emsp;&emsp; {{ bio | cut:" " }}</span>
+    </h2>
+
+    <!-- Wordcount filter -->
+    <h2>
+      Wordcount Filter:
+      <span>&emsp;&emsp; {{ bio | wordcount }}</span>
+    </h2>
+
+    <!-- Truncatechars filter -->
+    <h2>
+      Truncatechars Filter:
+      <span>&emsp;&emsp; {{ bio | truncatechars:21 }}</span>
+    </h2>
+
+    <!-- Truncatewords filter -->
+    <h2>
+      Truncatewords Filter:
+      <span>&emsp;&emsp; {{ bio | truncatewords:3 }}</span>
+    </h2>
+
+    <!-- Join filter -->
+    <h2>
+      Join Filter:
+      <span>&emsp;&emsp; {{ text_list | join:" - " }}</span>
+    </h2>
+
+    <!-- Length filter -->
+    <h2>
+      Length Filter:
+      <span>&emsp;&emsp; {{ text_list | length }}</span>
+    </h2>
+
+    <!-- First filter -->
+    <h2>
+      First Filter:
+      <span>&emsp;&emsp; {{ text_list | first }}</span>
+    </h2>
+
+    <!-- Last filter -->
+    <h2>
+      Last Filter:
+      <span>&emsp;&emsp; {{ text_list | last }}</span>
+    </h2>
+
+    <!-- Slice filter -->
+    <h2>
+      Slice Filter:
+      <span>&emsp;&emsp; {{ text_list | slice:"2" }}</span>
+    </h2>
+  </body>
+</html>
