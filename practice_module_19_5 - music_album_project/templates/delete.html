@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+<!-- crispy forms -->
+{% load crispy_forms_tags %}
+
+<!-- block content -->
+{% block content %}
+
+<form class="w-50 mx-auto my-5 text-center" method="post">
+  <h1>Are you sure you want to delete?</h1>
+
+  {% csrf_token %}
+
+  <!-- form -->
+  {{form | crispy}}
+
+  <button class="btn btn-warning my-5">Delete</button>
+</form>
+
+<!-- end of block -->
+{% endblock %}
