@@ -1,0 +1,32 @@
+.container {
+  width: 1200px;
+  margin: 50px auto;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.product-card {
+  width: 340px;
+  margin: 10px;
+}
+
+.product-card img {
+  padding: 30px;
+}
+
+.product-details-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  padding: 30px;
+}
+
+.product-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
